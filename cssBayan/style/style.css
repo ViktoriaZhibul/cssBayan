@@ -1,0 +1,62 @@
+html{
+    font-size: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    max-width: 92rem;
+    min-width: 29rem;
+    margin: auto;
+}
+
+.head__wrap{
+    margin: 2%;
+    border-bottom: 2px solid grey;
+}
+
+.head{
+    font-size: 4.2rem;
+}
+
+.question__wrap{
+    margin: 2%;
+    border-bottom: 2px solid grey;
+}
+
+.question__input{
+    display: none;
+}
+
+.label__discription{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.discription__title{
+    font-size: 3.8rem;
+    color: blue;
+    margin: 0;
+}
+.discription__ico-mark{
+    display: none;
+}
+.discription__ico-plus{
+    display: none;
+}
+.ico{
+    width: 2rem;
+    height: auto;
+    object-fit: contain;
+}
+.label__image{
+    display: none;
+    width: auto;
+    margin: 2%;
+}
+.image{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-height: 30rem;
+    object-fit: contain;
+}
