@@ -73,7 +73,7 @@ html{
 .container:hover input:checked + label .discription__ico-mark{
     display: block;
 }
-label:hover .label__image{
+.container label:hover .label__image{
     display: block;
 }
 .container label:hover .discription__ico-plus{
@@ -89,7 +89,29 @@ input:checked + label .label__image{
     display: block;
 }
 
-
+label:active .label__image{
+    opacity: 0.7;
+}
+.container label:active .discription__title{
+    color: blue;
+    opacity: 0.7;
+}
+@media (max-width: 1024px) {
+    .head{
+        font-size: 3rem;
+    }
+    .discription__title{
+        font-size: 2.4rem;
+    }
+}
+@media (max-width: 480px) {
+    .head{
+        font-size: 2.1rem;
+    }
+    .discription__title{
+        font-size: 1.8rem;
+    }
+}
 @media (hover:hover) {
 
 }
