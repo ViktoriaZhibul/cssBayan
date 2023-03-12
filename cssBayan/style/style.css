@@ -37,7 +37,6 @@ html{
     font-size: 3.8rem;
     color: blue;
     margin: 0;
-    transition: color .5s;
 }
 .discription__ico-mark{
     display: none;
@@ -74,9 +73,23 @@ html{
 .container:hover input:checked + label .discription__ico-mark{
     display: block;
 }
+label:hover .label__image{
+    display: block;
+}
+.container label:hover .discription__ico-plus{
+    display: none;
+}
+.container label:hover .discription__ico-mark{
+    display: block;
+}
 input:checked + label .discription__title{
     color: black;
 }
 input:checked + label .label__image{
     display: block;
+}
+
+
+@media (hover:hover) {
+
 }
