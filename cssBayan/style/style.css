@@ -22,11 +22,12 @@ html{
     margin: 2%;
     border-bottom: 2px solid grey;
 }
-
 .question__input{
     display: none;
 }
-
+.question__label{
+    cursor: pointer;
+}
 .label__discription{
     width: 100%;
     display: flex;
@@ -36,6 +37,7 @@ html{
     font-size: 3.8rem;
     color: blue;
     margin: 0;
+    transition: color .5s;
 }
 .discription__ico-mark{
     display: none;
@@ -59,4 +61,22 @@ html{
     width: 100%;
     max-height: 30rem;
     object-fit: contain;
+}
+.container:hover .discription__title{
+    color: black;
+}
+.container:hover .discription__ico-plus{
+    display: block;
+}
+.container:hover input:checked + label .discription__ico-plus{
+    display: none;
+}
+.container:hover input:checked + label .discription__ico-mark{
+    display: block;
+}
+input:checked + label .discription__title{
+    color: black;
+}
+input:checked + label .label__image{
+    display: block;
 }
